@@ -28,8 +28,7 @@ def main_loop():
     brightness_amount = st.sidebar.slider("Brightness", min_value=-50, max_value=50, value=0)
     apply_enhancement_filter = st.sidebar.checkbox('Enhance Details')
 
-    #image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
-    image_file = st.file_uploader("owl", type=['jpg'])
+    image_file = st.file_uploader("Upload Your Image", type=['jpg', 'png', 'jpeg'])
     if not image_file:
         return None
 
